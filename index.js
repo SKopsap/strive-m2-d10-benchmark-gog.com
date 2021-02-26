@@ -6,7 +6,8 @@ import { titleSection } from './components/single-components/titleSection'
 import { carouselHeader } from './components/single-components/carouselHeader'
 
 const state = {
-  data: {}
+  data: {},
+  isSearchOpen: false
 }
 
 // fetch data from mock api
