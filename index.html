@@ -1,55 +1,44 @@
 <!DOCTYPE html>
-<!--
-ASSIGNMENT RULES
-- The solution must be pushed to the repository and submitted the GitHub link on Eduflow before 17:00
-- You can google / use StackOverflow BUT we suggest you to use just the material provided
-- To test the page, just open it with your default browser.
-- Use Bootstrap4.6 classes to render the page.
-- Use containers and rows correctly in order to have a great display
-
-ASSIGNMENT TOPIC 
-You are creating a website to showcase your favourite albums.
-In this page you'd like to have a short bio of yourself, the top albums of your life, 
-the worst album you ever listen to and everything related to the music you love.
-
-IMPORTANT:
-Start from the previous Musical assignment project you've created on M2-D2
-
-NOTE:
-Most of the time, even the most expert designers, need inspiration.
-Spend some time surfing the web searching for the way of representing the albums that you like the most.
-Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
--->
-
-<html>
+<html lang="en">
   <head>
-    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
-    <!-- Bootstrap CSS -->
+    <script src="https://use.fontawesome.com/5500dde30f.js"></script>
     <link rel="stylesheet" href="./css/index.css" />
-    <style>
-      /* PREVIOUS STUFF */
-    </style>
   </head>
   <body>
-    <section id="section-navbar"></section>
+    <!--top sections,  nav & hero-->
+    <div class="main-wrapper">
+      <div class=".nav-spacer"></div>
+      <section id="hero-wrapper">
+        <section id="section-navbar"></section>
+        <section id="section-hero-title"></section>
+        <section id="section-hero-carousel"></section>
+        <section id="section-hero-cards"></section>
+      </section>
 
-    <section id="section-hero-title"></section>
+      <!-- main body section -->
+      <section style="min-height: 100vh" id="galaxy-wrapper">
+        <section id="onsale-container"></section>
+        <section id="whatsgood-container"></section>
+        <section id="recommended-container"></section>
+        <section id="discovergames-container"></section>
+        <section id="news-container"></section>
+      </section>
 
-    <section id="section-hero-carousel"></section>
+      <!-- end footer -->
+      <section id="section-footer"></section>
+    </div>
 
-    <section id="section-hero-cards"></section>
-
-    <section id="galaxy-wrapper">
-      <section id="onsale-container"></section>
-      <section id="whatsgood-container"></section>
-      <section id="recommended-container"></section>
-
-      <!-- maybe implement -->
-      <section id="discovergames-container"></section>
-      <section id="news-container"></section>
-    </section>
-
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/index.js"></script>
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   </body>
 </html>
