@@ -16,7 +16,7 @@ Standard boostrap5, used the CDN to serve the css and javascript, will implement
 
 ## Live Demo
 
-[Live Demo Link](https://strive-module2-day9.netlify.app/)
+[Live Demo Link](https://strive-m2-d10-benchmark-gogcom.netlify.app/)
 
 ## Getting Started
 
