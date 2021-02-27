@@ -1,4 +1,4 @@
-function titleSection(elmID, icon = '', title = '') {
+function titleSection(sectionId, icon = '', title = '') {
   const template = `
     <div class="container mt-3 mb-3 pb-3 title-section">
       <div class="d-flex flex-row align-items-center">
@@ -8,7 +8,7 @@ function titleSection(elmID, icon = '', title = '') {
     </div>
   `
 
-  const section = document.getElementById(elmID)
+  const section = document.getElementById(sectionId)
   section.innerHTML = template
 
   return section
