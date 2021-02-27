@@ -1,10 +1,17 @@
-function carouselHeader(elmID, data) {
+function carouselHeader(elementId, data) {
   console.log(data)
+
+  data.forEach((element, i, array) => {
+    console.log(element.image, i)
+  })
   const template = `
   <div id="carouselExampleIndicators" class="carousel container slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target4="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
@@ -37,10 +44,10 @@ function carouselHeader(elmID, data) {
     </a>
   </div>
   `
-  const section = document.getElementById(elmID)
-  section.innerHTML = template
+  const selected = document.getElementById(elementId)
+  selected.innerHTML = template
 
-  return section
+  return selected
 }
 
 export { carouselHeader }

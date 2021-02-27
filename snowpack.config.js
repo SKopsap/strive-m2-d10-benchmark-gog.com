@@ -16,6 +16,8 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    /* ... */
-  },
-};
+    bundle: true,
+    minify: true,
+    target: 'es2018'
+  }
+}

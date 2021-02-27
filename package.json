@@ -8,7 +8,6 @@
     "build": "snowpack build"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
     "snowpack": "^3.0.13"
   },
   "dependencies": {
