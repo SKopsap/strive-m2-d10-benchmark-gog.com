@@ -1,4 +1,6 @@
 function badge(elemenetId, title = '') {
+  console.log(`badgeComponentData: ${title}`)
+
   const template = `  
   <h6 style="font-size: 1.4rem; font-weight: 100"><span style="background-color: #78387B; padding: 0.5rem" class="badge badge-secondary">-${title}%</span></h6>
   `

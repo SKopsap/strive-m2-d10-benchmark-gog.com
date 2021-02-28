@@ -10912,12 +10912,12 @@ body {
 }
 
 .navbar {
-  height: 3.6rem;
+  height: 3.5rem;
 }
 
 .navbar li {
   margin-left: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: lightgray !important;
 }

@@ -17,7 +17,7 @@ const state = {
       recommended: true,
       rating: 'good',
       price: 49.99,
-      discountPct: 0,
+      discountPct: 30,
       systems: ['mac', 'windows']
     },
     {
@@ -40,7 +40,7 @@ const state = {
       recommended: true,
       rating: 'good',
       price: 49.9,
-      discountPct: 0,
+      discountPct: 25,
       systems: ['windows']
     },
     {

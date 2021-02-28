@@ -1,8 +1,6 @@
 import { badge } from './badge'
 
 function cardGame(elementId, data) {
-  console.log(data.discountPct)
-
   const template = `
     <div style="cursor: pointer; max-width: 270px; height: 190px; background-color: #ECECEC;" class="card mb-4 mr-0">
       <img style="height: 110px" src="${data.image}" class="card-image-top" alt="" />
