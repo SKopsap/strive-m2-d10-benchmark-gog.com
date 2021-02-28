@@ -5,7 +5,7 @@ function cardList(elementId, data, display = 4) {
     data: {}
   }
 
-  // display how many list items are rendered
+  // uses incoming argument to chose how many list items are rendered
   state.data = data.slice(0, display)
   console.log(state.data)
 
@@ -19,7 +19,7 @@ function cardList(elementId, data, display = 4) {
   selected.innerHTML = template
   const ul = document.getElementById('card-list')
 
-  // Generate list
+  // Generate list using local state data
   state.data.forEach((data, i) => {
     let elementId = `card-item-${i}`
     const li = document.createElement('li')

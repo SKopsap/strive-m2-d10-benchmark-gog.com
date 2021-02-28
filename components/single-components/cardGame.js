@@ -5,7 +5,7 @@ function cardGame(elementId, data) {
 
   const template = `
     <div style="cursor: pointer; max-width: 270px; height: 190px; background-color: #ECECEC;" class="card mb-4 mr-0">
-      <img style="height: 110px" src="${data.image}" class="card-image-top border-bottom border-secondary" alt="" />
+      <img style="height: 110px" src="${data.image}" class="card-image-top" alt="" />
       <div class="card-body pt-2">
         <h6>${data.name}</h6>
         <div class="row justify-content-between align-items-center">
