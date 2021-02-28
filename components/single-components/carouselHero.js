@@ -1,10 +1,6 @@
 import { buttonAddToCart } from './buttonAddToCart'
 
 function carouselHero(elementId, data) {
-  data.forEach((element, i, array) => {
-    console.log(element.image, i)
-  })
-
   const template = `
   <div id="carouselExampleIndicators" class="carousel p-0 container slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -17,7 +13,9 @@ function carouselHero(elementId, data) {
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-      <div id="heroheading" style="position: absolute; bottom: 20px; right: 20px"></div>
+        <div style="position: absolute; bottom: 20px; left: 20px"><h2 style="color: white">${data[0].name}</h2></div>
+        <div id="add-to-cart" style="position: absolute; bottom: 20px; right: 20px"></div>
+        <div id="price-label" style="position: absolute; bottom: 20px; right: 200px"><h3 style="color: white">£ ${data[0].price}</h3></div>
         <img src="${data[0].image}" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
@@ -50,7 +48,7 @@ function carouselHero(elementId, data) {
   selected.innerHTML = template
 
   // construct components from other files used in this component
-  buttonAddToCart('heroheading', 'Add to cart', 'fa fa-shopping-cart')
+  buttonAddToCart('add-to-cart', 'Add to cart', 'fa fa-shopping-cart')
 
   return selected
 }

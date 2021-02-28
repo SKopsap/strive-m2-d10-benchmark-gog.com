@@ -4,8 +4,8 @@ import { navbar } from './components/single-components/navbar'
 import { footer } from './components/single-components/footer'
 import { titleSection } from './components/single-components/titleSection'
 import { carouselHero } from './components/single-components/carouselHero'
-import { cardGame } from './components/single-components/cardGame'
 import { buttonAddToCart } from './components/single-components/buttonAddToCart'
+import { cardList } from './components/list-components/cardList'
 
 const state = {
   data: [
@@ -87,7 +87,7 @@ window.onload = function () {
   navbar()
   titleSection('section-hero-title', 'fa fa-pencil', 'Highlights')
   carouselHero('section-hero-carousel', state.data)
-  cardGame('section-hero-cards')
+  cardList('section-hero-cards', state.data, 4)
 
   // main body sections
   titleSection('onsale-container', 'fa fa-percent', 'Now on sale')
