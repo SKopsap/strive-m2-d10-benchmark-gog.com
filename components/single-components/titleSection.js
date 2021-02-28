@@ -1,17 +1,17 @@
-function titleSection(sectionId, icon = '', title = '') {
+function titleSection(elementId, icon = '', title = '') {
   const template = `
-    <div class="container mt-3 mb-3 pb-3 title-section">
+    <div class="container pl-0 mt-3 mb-4 pb-3 title-section">
       <div class="d-flex flex-row align-items-center">
-        <span><i style="font-size: 24px" class="fa ${icon}" aria-hidden="true"></i></span>
-        <h4 class="ml-3">${title}</h4>
+        <span><i style="font-size: 17px" class="${icon}" aria-hidden="true"></i></span>
+        <h5 class="ml-3 font-weight-bold">${title}</h5>
       </div>
     </div>
   `
 
-  const section = document.getElementById(sectionId)
-  section.innerHTML = template
+  const selected = document.getElementById(elementId)
+  selected.innerHTML = template
 
-  return section
+  return selected
 }
 
 export { titleSection }

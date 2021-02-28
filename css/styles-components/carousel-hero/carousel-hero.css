@@ -1,0 +1,33 @@
+#carouselExampleIndicators {
+  overflow-x: visible;
+  margin-bottom: 4rem;
+  max-height: 450px;
+}
+
+#carouselExampleIndicators .carousel-inner {
+  min-height: 350px;
+  max-height: 500px !important;
+  overflow-x: visible;
+}
+
+#carouselExampleIndicators img {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 0.3rem;
+}
+
+#carouselExampleIndicators .carousel-indicators {
+  display: absolute;
+  bottom: -45px;
+}
+
+#carouselExampleIndicators .carousel-indicators li {
+  height: 2px;
+  width: 3rem;
+  margin-left: 1rem;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: purple;
+}
+/*# sourceMappingURL=carousel-hero.css.map */

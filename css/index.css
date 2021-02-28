@@ -10849,6 +10849,39 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom: 1px darkgray solid;
 }
 
+#carouselExampleIndicators {
+  overflow-x: visible;
+  margin-bottom: 4rem;
+  max-height: 450px;
+}
+
+#carouselExampleIndicators .carousel-inner {
+  min-height: 350px;
+  max-height: 500px !important;
+  overflow-x: visible;
+}
+
+#carouselExampleIndicators img {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 0.3rem;
+}
+
+#carouselExampleIndicators .carousel-indicators {
+  display: absolute;
+  bottom: -45px;
+}
+
+#carouselExampleIndicators .carousel-indicators li {
+  height: 2px;
+  width: 3rem;
+  margin-left: 1rem;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: purple;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -10876,5 +10909,20 @@ body {
 
 #hero-wrapper {
   border-bottom: 1px solid gray;
+}
+
+.navbar {
+  height: 3.6rem;
+}
+
+.navbar li {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: lightgray !important;
+}
+
+.navbar li:hover {
+  color: whitesmoke !important;
 }
 /*# sourceMappingURL=index.css.map */

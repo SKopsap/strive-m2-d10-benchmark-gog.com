@@ -1,0 +1,36 @@
+#carouselExampleIndicators {
+  overflow-x: visible;
+  margin-bottom: 4rem;
+  max-height: 450px;
+
+  .carousel-inner {
+    min-height: 350px;
+    max-height: 500px !important;
+    overflow-x: visible;
+  }
+
+  img {
+    width: 100%;
+    min-height: 350px;
+    border-radius: 0.3rem;
+  }
+
+  .carousel-indicators {
+    display: absolute;
+    bottom: -45px;
+    li {
+      height: 2px;
+      width: 3rem;
+      margin-left: 1rem;
+    }
+    .active {
+      background-color: purple;
+    }
+  }
+
+  // .carousel-inner > .item {
+  //   -webkit-transition: -webkit-transform 0.5s ease-in-out !important;
+  //   -o-transition: -o-transform 0.5s ease-in-out !important;
+  //   transition: transform 0.5s ease-in-out !important;
+  // }
+}

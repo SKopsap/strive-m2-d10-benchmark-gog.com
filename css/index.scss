@@ -1,6 +1,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import './components/navbar/navbar';
-@import './components/title-section/title-section';
+@import './styles-components/navbar/navbar';
+@import './styles-components/title-section/title-section';
+@import './styles-components/carousel-hero/carousel-hero';
 
 body {
   width: 100vw;
@@ -24,5 +25,17 @@ body {
   border-bottom: 1px solid gray;
 }
 
-#section-hero-cards {
+.navbar {
+  height: 3.6rem;
+
+  li {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: lightgray !important;
+  }
+
+  li:hover {
+    color: whitesmoke !important;
+  }
 }
